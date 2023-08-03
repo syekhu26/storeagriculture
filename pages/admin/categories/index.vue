@@ -85,7 +85,7 @@
 
 <script>
 export default {
-  layout: 'admin2',
+  layout: 'admin',
   head() {
     return {
       title: 'Categories - Administrator',

@@ -19,7 +19,7 @@
     </div> -->
     <div class="c-wrapper ">
       <!-- header -->
-      <admin2NavBar />
+      <adminNavBar />
       <!-- end header -->
 
       <div class="c-body">
