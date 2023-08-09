@@ -142,7 +142,7 @@
             >
               <div class="flex items-center">
                 <img :src="category.image" width="50" />
-                
+
                 <div class="px-3">
                   {{ category.name }}
                 </div>
@@ -166,13 +166,19 @@
           >
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link" data-abc="true"
-            ><i class="fa fa-info-circle"></i> TENTANG</a
-          >
+          <nuxt-link :to="{ name: 'customer-invoices' }" class="dropdown-item"
+            ><i class="fa fa-shopping-cart"></i> MY ORDERS
+          </nuxt-link>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link" data-abc="true"
-            ><i class="fa fa-comments"></i> KONTAK</a
+          <!-- <a href="#" class="nav-link" data-abc="true"
+            ><i class="fa fa-info-circle"></i> TENTANG</a
+          > -->
+          <nuxt-link
+            :to="{ name: 'customer-tentang' }"
+            class="nav-link"
+            data-abc="true"
+            ><i class="fa fa-info-circle"></i> TENTANG</nuxt-link
           >
         </li>
       </ul>
